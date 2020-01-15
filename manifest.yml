@@ -3,7 +3,7 @@ applications:
   - name: pal-tracker-praj
     path: build/libs/pal-tracker.jar
     routes:
-    - route: pal-tracker-praj.apps.pal.pivotal.io
+    - route: pal-tracker-praj-responsible-gelada-oj.cfapps.io
     env:
       WELCOME_MESSAGE: Hello from the review environment
       JBP_CONFItG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'

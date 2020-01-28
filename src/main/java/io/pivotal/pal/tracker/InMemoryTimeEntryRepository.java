@@ -2,12 +2,9 @@ package io.pivotal.pal.tracker;
 
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import static java.util.Arrays.asList;
 
 @Repository
 

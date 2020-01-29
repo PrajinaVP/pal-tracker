@@ -48,6 +48,7 @@ bootRun.environment([
         "SPRING_DATASOURCE_URL": developmentDbUrl,
         "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE": "*",
         "MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS": "always",
+        "MANAGEMENT_ENDPOINTS_WEB_BASE-PATH": "/",
 ])
 
 def testDbUrl = "jdbc:mysql://localhost:3306/tracker_test?user=tracker&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false"
@@ -56,6 +57,7 @@ test.environment([
         "SPRING_DATASOURCE_URL": testDbUrl,
         "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE": "*",
         "MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS": "always",
+        "MANAGEMENT_ENDPOINTS_WEB_BASE-PATH": "/",
 ])
 
 flyway {
